@@ -1,11 +1,11 @@
 <script setup>
     import axios from 'axios'
 
-    const apiUrl = "api url goes here"
+    const apiUrl = "http://localhost:7210/api/"
     var records = []
 
     try{
-        const response = await axios.get(apiUrl)
+        const response = await axios.get(apiUrl + "records")
         records = response.data
     }catch(ex){
         alert(ex.message)
