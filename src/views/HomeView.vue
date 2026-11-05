@@ -23,7 +23,7 @@ function CleanUp() {
 
 async function SearchData() {
   //console.log(titleInput.value)
-  const searchAPI = ref('https://localhost:7210/api/records?')
+  const searchAPI = ref('https://soo-backend-g8ffhpadhhc7etbn.swedencentral-01.azurewebsites.net/api/records?')
   if (titleInput.value != null)
     searchAPI.value = searchAPI.value.concat('title=' + titleInput.value, '&')
   if (artistInput.value != null)
