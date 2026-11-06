@@ -65,7 +65,7 @@ function UniqueElementId(param1, param2) {
     </div>
     <table>
       <thead>
-        <tr class="tr-th">
+        <tr>
           <th>id</th>
           <th>title</th>
           <th>artist</th>
@@ -75,7 +75,7 @@ function UniqueElementId(param1, param2) {
         </tr>
       </thead>
       <tbody>
-        <tr v-for="a in array" key="a.id" :id="UniqueElementId(a.id, a.title)" class="table-row">
+        <tr v-for="a in array" key="a.id" :id="UniqueElementId(a.id, a.title)" class="table-row tr-th">
           <td class="id">{{ a.id }}</td>
           <td class="title">{{ a.title }}</td>
           <td class="artist">{{ a.artist }}</td>
